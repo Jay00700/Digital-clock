@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Exile&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap');
+
+@theme{
+    --font-Exile: "Exile";
+    --font-Playwrite: "Playwrite HU";
+}
+
+.gradient-border {
+    border: 4px solid transparent;
+    border-image: linear-gradient(to right, grey, white) 1;
+}
