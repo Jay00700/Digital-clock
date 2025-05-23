@@ -7,7 +7,19 @@
     --font-Playwrite: "Playwrite HU";
 }
 
-.gradient-border {
-    border: 4px solid transparent;
-    border-image: linear-gradient(to right, grey, white) 1;
+@layer utilities {
+  @keyframes quartz-tick {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-quartz-tick {
+    animation: quartz-tick 60s steps(60, end) infinite;
+    transform-origin: bottom;
+  }
 }
+
