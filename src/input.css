@@ -16,10 +16,25 @@
       transform: rotate(360deg);
     }
   }
-
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    } 
+}
   .animate-quartz-tick {
     animation: quartz-tick 60s steps(60, end) infinite;
     transform-origin: bottom;
+  }
+  .animate-minute-tick{
+    animation: spin 3600s linear infinite;
+    transform-origin: bottom;
+  }
+  .animate-hour-tick{
+    animation: spin 43200s linear infinite;
+    transform-origin:bottom;
   }
 }
 
